@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+   <head>
+      <meta charset="utf-8" />
+      <title>Blue Lock</title>
+      <link rel="stylesheet" href="./styles/index.css" />
+      <link rel="stylesheet" href="./styles/indexContact.css" />
+      <link rel="icon" href="./images/logo-bluelock.png" />
+   </head>
+   <body>
+      <header>
+      </header>
+      <nav>	<!barre de navigation>
+         <a href="./Blue_Lock.html">
+            <div>Acceuil</div>
+         </a>
+         <a href="./formation.html">
+            <div>Formation</div>
+         </a>
+         <a class="ici" href="./contact.html">
+            <div>Contact</div>
+         </a>
+      </nav>
+      <aside>	<!logo qui renvoie a la page d'acceuil>
+         <a class="logo" href="Blue_Lock.html">
+         <img src="./images/logo-bluelock.png" alt ="logo bluelock" style = "width:140px; height:100px"/>
+         </a>
+      </aside>
+      <div>	<! banderole qui separe les differentes parties de la page web >
+         <img class="separateur" src="./images/separateur-bl.png.webp" alt="separateur Blue Lock"/>
+      </div>
+      <main class="principal"> <!Formulaire de communication>
+         <section>
+            <br>
+            <h1>Comment nous contacter:</h1>
+            <form 
+               action="https://webdev.iut-orsay.fr/r102/tests/formulaire/test_formulaire.php"
+               method="post"
+               >
+               <label for="u_name">
+               Nom
+               </label>
+               <input id="u_name"
+                  name="nom_utilisateur"
+                  type="text"
+                  required
+                  placeholder="YOICHI"
+                  />
+               <label for="u_firstname">
+               Prénom
+               </label>
+               <input id="u_firstname"
+                  name="prenom_utilisateur"
+                  type="text"
+                  placeholder="Isagi"
+                  />
+               <label for="adresse_mail">
+               Adresse mail
+               </label>
+               <input id="adresse_mail"
+                  name="mail_utilisateur"
+                  type="password"
+                  required
+                  placeholder="IsagiYoichi@gmail.com"
+                  />
+               <label for="mobile">
+               Mobile *
+               </label>
+               <input id="mobile"
+                  name="tel_utilisateur"
+                  type="text"
+                  required
+                  placeholder="06 12 34 56 78"
+                  pattern="[A-Z]{2}\d{3}[a-z]{2}\d{3}\.((pdf)|(csv))"
+                  />
+               <label for="quelle_formation">
+               Par quelle formation êtes-vous interéssé ?
+               </label>
+               <select id="quelle_formation" name="message_utilisateur">
+                  <option value="striker">Attaquant</option>
+                  <option value="middlefielder">Milieu de terrain</option>
+                  <option value="crusher">Defenseur</option>
+                  <option value="goalkeeper">Gardien de But</option>
+               </select>
+               <label for="notif">
+               J’accepte de recevoir les informations de la part du groupe BLUE LOCK
+               </label>
+               <input id="notif"
+                  name="check_confirmation_utilisateur"
+                  type="checkbox"
+                  required
+                  />
+               <br>
+               <label for="u_confidence">
+               Comment trouvez-vous notre école ?
+               </label>
+               <input id="u_confidence"
+                  name="confiance_utilisateur"
+                  type="range"							
+                  min="1"
+                  max="100"
+                  />
+               <label for="u_message">
+               Un message personnel ?
+               </label>
+               <input id="u_message"
+                  name="message_utilisateur"
+                  type="text"
+                  required
+                  placeholder="Laissez-nous un avis"
+                  style="height:100px;"
+                  />
+               <input 
+                  name="je_te_connais"
+                  type="hidden"
+                  value="ton_numero_est_24254"
+                  />
+               <input type="submit" value="envoyer" />
+               <input type="reset" value="annuler" />
+            </form>
+         </section>
+      </main>
+      <article><!communication vers l'école>
+         <h1>Notre campus</h1>
+         <p>Notre école possède 1 seul campus, voici sa localisation
+            <br>
+            Telephone : +81 654 347 123
+            <br>
+            Adresse mail : Isagi_yoichi@bluelock.com
+            <br>
+            Adresse : Kanaishinbo, Sado, Préfecture de Niigata 952-1208, Japon
+         </p>
+         <p> <! Carte interactive>
+            <iframe class='carte' width="425" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=138.19187164306643%2C38.0209143918266%2C138.47854614257815%2C38.14252246628012&amp;layer=mapnik&amp;marker=38.081743710307876%2C138.33520889282227" 
+               ></iframe>
+         </p>
+      </article>
+      <div>	<!banderole qui separe les differentes parties de la page web >
+         <img class="separateur" src="./images/separateur-bl.png.webp" alt="separateur Blue Lock"/>
+         <div class="reseau">	<! Liens vers des applications >
+            <a href="https://www.instagram.com/gglatruite/" title="instagram">
+            <img src="./images/instagram.svg" alt ="Logo Instagram"/></a>
+            <a href="https://www.facebook.com/groups/898735731144113/" title="Facebook">
+            <img src="./images/facebook.svg" alt ="Logo Facebook"/></a>
+            <a href="https://twitter.com/TheTwoHornedOne" title="X">
+            <img src="./images/twitter.svg" alt ="LogoX" style = "width: 25px;"></a>
+            <a href="https://www.youtube.com/@bluelockfr" title="Youtube">
+            <img src="./images/youtube.svg" alt ="Logo Youtube"/></a>
+            <a href="https://www.tiktok.com/@truitosart" title="TikTok">
+            <img src="./images/tik-tok.png" alt ="Logo TikTok"/></a>
+         </div>
+      </div>
+      <footer> <!pied de page avec nom prenom, liens vers une boutique, les deux rapports et l'adresse de l'ecole>
+         <section>
+            <p>Thomas Neuville Ines Durand</p>
+         </section>
+         <address>
+            <p>Kanaishinbo, Sado, Préfecture de Niigata 952-1208, Japon</p>
+            <p><a href="https://www.bluelock.fr/">Boutique officielle du Blue Lock</a><br>
+               <a href="./rapport/rapportprojetcwac.docx" />Rapport (format word)</a><br>
+               <a href="./rapport/rapportprojetcwac2.pdf" />Rapport (format pdf)</a>
+            </p>
+         </address>
+      </footer>
+   </body>
+</html>
+<! :) >

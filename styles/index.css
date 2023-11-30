@@ -1,0 +1,201 @@
+@charset "utf-8";
+/*Thomas Neuville Ines Durand 1M 
+rendu le 30/11/2023
+css principal
+rassemble le style principal utilisé sur les 3 pages html*/
+
+/*-----------------css body et header principal-----------------------*/
+
+body{
+	background:linear-gradient(to right,#0663ff,#13217b);
+	margin: 0;
+ } 
+ 
+header img{
+	float: right;
+}
+/*-----------------css logo reseaux sociaux-----------------------*/
+
+div div a{
+	padding: 5px;
+}
+
+div div a:hover{
+	border: 2px solid red;
+	border-radius: 50%;
+	transition: 0.3s all;
+}
+
+.reseau{	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	gap: 10px;
+}
+/*-----------------css logo principal-----------------------*/
+
+aside{
+	margin-top: 10px;
+	border  : 2px solid black;
+	background-image : url("../images/banderole.jpg");
+	background-color: white;	
+	background-position:center;
+}
+/*----------------------css main principal------------------*/
+
+main h1{
+	position:relative;
+	border  : 2px solid black;
+	padding : 2rem;
+	color:#0716b2;
+	font-size:20px; 
+	width: fit-content;
+	margin-top: 4rem;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: Blippo, fantasy;
+	font-weight: bold;
+	text-decoration: underline;
+	text-transform: uppercase;
+	text-align:center;
+	border-radius: 10px;
+	background-color: #FFFFFFB3;
+}
+
+main p{
+	position:relative;
+	border  : 2px solid black;
+	padding : 2rem;
+	color:#0716b2;
+	font-size:20px; 
+	border-radius: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: fit-content;
+	font-family: Blippo, fantasy;
+	background-color: #FFFFFFBD;
+	padding: 20px;
+	max-width: 50em;
+}
+/*----------------------css bouton navigation------------------*/
+
+nav{
+	margin-top: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+ nav a{
+	margin: auto;
+	text-decoration : none;
+	display : inline-block;
+	width : 28%;
+	text-align : center;
+	color : black;
+	font-weight : bold;
+	font-size : 2rem;
+	padding: 1rem;
+	font-family: Blippo, fantasy;
+}
+
+ nav a.ici{
+	color : black;
+}
+
+ nav a:hover{
+	box-shadow: 2px 2px 10px black;
+}
+
+nav a div{
+	width: fit-content;
+	margin: auto;
+}
+
+nav a div::after{
+	content:"";
+	width:0px;
+	display:block;
+	transition: width 1s;
+}
+
+nav a:hover div::after{
+	content:"";
+	border:2px solid red;
+	width:100%;
+}
+/*----------------------css footer principal------------------*/
+
+footer{
+	padding-top:2px;
+	padding-bottom:2px;
+	background-image : url("../images/banderole.jpg");
+	background-position:center;
+	margin-top: 0%;
+	
+}
+
+footer p{
+	border:solid;
+	font-family: Blippo, fantasy;
+	background-color: #FFFFFFBD;
+	padding-top: 2px;
+	margin-bottom: 0%;
+	text-align : right;
+
+}
+
+footer section p{
+	margin-top:0%;
+	text-align:center;
+	max-width: 13em;
+	margin-right: 2px;
+	margin-left:auto;
+}
+
+footer address p{
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 25em;
+	padding-bottom: 1rem;
+	text-align : center;
+}
+/*----------------------fond d'ecran principal-------------*/
+
+main.principal {
+  border: 2px solid black;
+  padding: 2rem;
+  background-image: url("../images/fond_principal.jpg");
+  background-repeat: no-repeat;
+  color: #0716b2;
+  font-size: 20px;
+  background-size: cover;
+  height: 200%;
+  position: relative;
+  overflow: hidden;
+  perspective: 1000px; 
+}
+
+main.principal:before {
+  content:"";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  background-image: url("../images/fond_principal.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main.principal:hover:before{
+  transform: translateZ(110px); 
+  transition: transform 0.3s ease-out;
+}
+/* ----------------------- css separateur ------------------------ */
+
+.separateur{
+	width:98.5%;
+	text-align: center;
+}

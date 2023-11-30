@@ -1,0 +1,120 @@
+@charset "utf-8";
+/*Thomas Neuville Ines Durand 1M 
+rendu le 30/11/2023
+css de la page de formation
+rassemble le style utilisé sur la page de formation spécifiquement*/
+
+/*---------------------css footer particulier----------------------------*/
+
+footer div p{
+	margin-top:0%;
+	text-align:center;
+	max-width: 13em;
+	margin-right: 2px;
+	margin-left:auto;
+}
+
+/*---------------------css paragaphe des differentes formations----------------------------*/
+
+section {
+  border: 2px solid black;
+  padding: 2rem;
+  background-repeat: no-repeat;
+  color: #0716b2;
+  font-size: 20px;
+  background-size: cover;
+  height: 200%;
+  position: relative;
+  overflow: hidden;
+  perspective: 1000px;  
+}
+
+section:before{
+  content:"";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+section:hover:before{
+  transform: translateZ(110px); 
+  transition: transform 0.3s ease-out;
+}
+
+section h1{
+	position:relative;
+	border  : 2px solid black;
+	padding : 1.5rem;
+	color:#0716b2;
+	font-size:20px; 
+	width: fit-content;
+	margin-top: 4rem;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: Blippo, fantasy;
+	font-weight: bold;
+	text-decoration: underline;
+	text-transform: uppercase;
+	text-align:center;
+	border-radius: 10px;
+	background-color: #FFFFFFB3;
+
+}
+
+section p{
+	position:relative;
+	border  : 2px solid black;
+	padding : 2rem;
+	color:#0716b2;
+	font-size:20px; 
+	border-radius: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: fit-content;
+	font-family: Blippo, fantasy;
+	background-color: #FFFFFFBD;
+	padding: 20px;
+	max-width: 50em;	
+}
+/*-------------spécificité formation d'attaquant-------------*/
+
+section.attaquant{
+  background-image: url("../images/attaquant.png"); /*image d'attaquant*/
+}
+
+section.attaquant:before{
+  background-image: url("../images/attaquant.png"); /*image d'attaquant*/
+}
+/*-------------spécificité formation d'milieu de terrain-------------*/
+
+section.mt{
+  background-image: url("../images/milieu_de_terrain.jpg"); /*image d'milieu de terrain*/
+}
+
+section.mt:before{
+  background-image: url("../images/milieu_de_terrain.jpg"); /*image d'milieu de terrain*/
+}
+/*-------------spécificité formation defense-------------*/
+
+section.defn{
+  background-image: url("../images/defenseur.png"); /*image defense*/
+}
+
+section.defn:before{
+  background-image: url("../images/defenseur.png"); /*image defense*/
+}
+/*-------------spécificité formation gardien-------------*/
+
+section.gardien{
+  background-image: url("../images/gardien.jpg"); /*image gardien*/
+}
+
+section.gardien:before{
+  background-image: url("../images/gardien.jpg"); /*image gardien*/
+}

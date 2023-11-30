@@ -1,0 +1,36 @@
+@charset "utf-8";
+/*Thomas Neuville Ines Durand 1M 
+rendu le 30/11/2023
+css de la page d'accueil
+rassemble le style utilisé sur la page d'accueil spécifiquement*/
+
+
+
+/*---------------------Video-------------------------------*/
+
+section iframe{
+	position:relative;
+	background-color: black;
+	border: 2px solid black;
+	box-shadow: 4px 4px 2px black;
+	border-radius: 70%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+ifram video_presentation{
+	background-color: black;
+	border: 2px solid black;
+	box-shadow: 4px 4px 2px black;
+	border-radius: 70%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+iframe:hover{
+		background-color: black;
+		border: 5px solid red;
+		transition: 0.3s all;
+}
